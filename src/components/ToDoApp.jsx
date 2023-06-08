@@ -1,4 +1,4 @@
-import todo from '../images/todo.svg'
+import todo from '../images/todo.png'
 import { FaPlus } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaEdit } from "react-icons/fa";
