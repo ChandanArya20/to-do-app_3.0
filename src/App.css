@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #103049;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoApp{
+  margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+img{
+  height: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading h3{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.inputContainer{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.inputContainer input{
+  padding: 10px 40px;
+  background-color: #fff;
+  color: rgb(58, 57, 57);
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
+  border:1px solid white ;
+}
+input:focus{
+  border-color: blue;
+  outline: none;
+}
+.inputIcon-container{
+  display: flex;
+  align-items: center;
+} 
+.inputIcon {
+  color: #12b003;
+  margin-left: -25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+.inputIcon:hover{
+  color: #138d07;
+}
+/* .EditInputIcon{
+  color: #12b003;
+  margin-left: -25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 200ms; 
+}*/
+.item-container{
+  margin-top:15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  width:310px;
+  height: 43px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.item:hover{
+  background-color: #7cffcf;
+}
+.item h4{
+  width: 230px;
+  margin-right: 5px;
+  color: black;
+}
+.delete-icon{
+  color: #000000;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 200ms;
+}
+.delete-icon:hover{
+  color: #f50303;
+  
+}
+.edit-icon{
+  color: #000000;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 200ms;
+}
+.edit-icon:hover{
+  color: #007BFF;
+}
+.deleteAllBtn{
+  display: flex;
+  justify-content: center;
+}
+.deleteAllBtn button{
+  margin-top: 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 300ms;
+}
+.deleteAllBtn button:hover{
+  background-color: #b11d1d;
+  color: #ffffff;
+  cursor: pointer;
 }
